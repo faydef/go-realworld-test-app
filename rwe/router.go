@@ -17,7 +17,7 @@ var (
 
 func init() {
 	Router = gin.Default()
-	Router.Use(corsMiddleware)
+	// Router.Use(corsMiddleware)
 	Router.Use(errorMiddleware)
 	Router.Use(rateLimitMiddleware)
 	Router.Use(otelgin.Middleware("rwe"))
